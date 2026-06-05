@@ -1,15 +1,27 @@
-import { Text, View } from "react-native";
-
+import { Text, View  ,ImageBackground} from "react-native";
+// import { HeartButton} from "../Components/HeartButton"
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text> welcome </Text>
-    </View>
+    
+ <ImageBackground
+ source={ require("../assets/sport/Background.png")} 
+ style={{flex:1,
+  height:"auto",
+  width:"auto",
+ }} >
+  <Text
+  style={{ 
+  
+    color: "red",
+    
+  }}
+  > welcome </Text>
+ </ImageBackground>
+    
+   
+
+    
+     
+      
   );
 }
